@@ -25,21 +25,8 @@ Analyzing 214 Bollywood films (2019–2023) to uncover what actually drives box 
 ## Architecture — Star Schema
 
 ```
-                    dim_date
-                   (date_id PK)
-                   full_date
-                   day, month, year
-                   festive_season
-                        |
-                        |
-dim_verdict ——— fact_movies ———
-(verdict_id PK)  (movie_id PK)
-verdict_label     movie
-verdict_tier      budget
-                  worldwide
-                  india_gross
-                  overseas
-                  roi
+<img width="1104" height="733" alt="{E7BFCBB7-8F26-4A2B-88B2-1321317F2085}" src="https://github.com/user-attachments/assets/a05ef2a2-e644-4a67-b45e-e630c7344491" />
+
 ```
 
 **Staging → Dimension Tables → Fact Table**  
